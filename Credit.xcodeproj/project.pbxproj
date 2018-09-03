@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		449D2533213D003900948792 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D2532213D003900948792 /* OTPViewController.swift */; };
+		449D2537213D1B9E00948792 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D2536213D1B9E00948792 /* AddCardViewController.swift */; };
+		449D253D213D3D9C00948792 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D253C213D3D9C00948792 /* CollectionViewCell.swift */; };
+		BE8078AF213953BF008AE246 /* Mitr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078A8213953BF008AE246 /* Mitr-Regular.ttf */; };
+		BE8078B0213953BF008AE246 /* Mitr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078A9213953BF008AE246 /* Mitr-Bold.ttf */; };
+		BE8078B1213953BF008AE246 /* Mitr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078AA213953BF008AE246 /* Mitr-Medium.ttf */; };
+		BE8078B2213953BF008AE246 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE8078AB213953BF008AE246 /* OFL.txt */; };
+		BE8078B3213953BF008AE246 /* Mitr-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078AC213953BF008AE246 /* Mitr-Light.ttf */; };
+		BE8078B4213953BF008AE246 /* Mitr-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078AD213953BF008AE246 /* Mitr-SemiBold.ttf */; };
+		BE8078B5213953BF008AE246 /* Mitr-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078AE213953BF008AE246 /* Mitr-ExtraLight.ttf */; };
+		BE86372B213AA80C0054A0C8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86372A213AA80C0054A0C8 /* RegisterViewController.swift */; };
+		BEE7DCFD213914CD004583CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7DCFC213914CD004583CB /* AppDelegate.swift */; };
+		BEE7DCFF213914CD004583CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7DCFE213914CD004583CB /* ViewController.swift */; };
+		BEE7DD02213914CD004583CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE7DD00213914CD004583CB /* Main.storyboard */; };
+		BEE7DD04213914CE004583CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE7DD03213914CE004583CB /* Assets.xcassets */; };
+		BEE7DD07213914CE004583CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE7DD05213914CE004583CB /* LaunchScreen.storyboard */; };
+		BEE7DD12213914CE004583CB /* CreditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7DD11213914CE004583CB /* CreditTests.swift */; };
+		BEE7DD1D213914CE004583CB /* CreditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7DD1C213914CE004583CB /* CreditUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEE7DD0E213914CE004583CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE7DCF1213914CC004583CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE7DCF8213914CC004583CB;
+			remoteInfo = Credit;
+		};
+		BEE7DD19213914CE004583CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE7DCF1213914CC004583CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE7DCF8213914CC004583CB;
+			remoteInfo = Credit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		449D2532213D003900948792 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		449D2536213D1B9E00948792 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		449D253C213D3D9C00948792 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BE8078A8213953BF008AE246 /* Mitr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Regular.ttf"; sourceTree = "<group>"; };
+		BE8078A9213953BF008AE246 /* Mitr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Bold.ttf"; sourceTree = "<group>"; };
+		BE8078AA213953BF008AE246 /* Mitr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Medium.ttf"; sourceTree = "<group>"; };
+		BE8078AB213953BF008AE246 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		BE8078AC213953BF008AE246 /* Mitr-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Light.ttf"; sourceTree = "<group>"; };
+		BE8078AD213953BF008AE246 /* Mitr-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-SemiBold.ttf"; sourceTree = "<group>"; };
+		BE8078AE213953BF008AE246 /* Mitr-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BE86372A213AA80C0054A0C8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BEE7DCF9213914CD004583CB /* Credit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Credit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE7DCFC213914CD004583CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEE7DCFE213914CD004583CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEE7DD01213914CD004583CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEE7DD03213914CE004583CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEE7DD06213914CE004583CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEE7DD08213914CE004583CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE7DD0D213914CE004583CB /* CreditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE7DD11213914CE004583CB /* CreditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTests.swift; sourceTree = "<group>"; };
+		BEE7DD13213914CE004583CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE7DD18213914CE004583CB /* CreditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE7DD1C213914CE004583CB /* CreditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUITests.swift; sourceTree = "<group>"; };
+		BEE7DD1E213914CE004583CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEE7DCF6213914CC004583CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE7DD0A213914CE004583CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE7DD15213914CE004583CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE8078A7213953BF008AE246 /* Mitr */ = {
+			isa = PBXGroup;
+			children = (
+				BE8078A8213953BF008AE246 /* Mitr-Regular.ttf */,
+				BE8078A9213953BF008AE246 /* Mitr-Bold.ttf */,
+				BE8078AA213953BF008AE246 /* Mitr-Medium.ttf */,
+				BE8078AB213953BF008AE246 /* OFL.txt */,
+				BE8078AC213953BF008AE246 /* Mitr-Light.ttf */,
+				BE8078AD213953BF008AE246 /* Mitr-SemiBold.ttf */,
+				BE8078AE213953BF008AE246 /* Mitr-ExtraLight.ttf */,
+			);
+			path = Mitr;
+			sourceTree = "<group>";
+		};
+		BEE7DCF0213914CC004583CB = {
+			isa = PBXGroup;
+			children = (
+				BEE7DCFB213914CD004583CB /* Credit */,
+				BEE7DD10213914CE004583CB /* CreditTests */,
+				BEE7DD1B213914CE004583CB /* CreditUITests */,
+				BEE7DCFA213914CD004583CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEE7DCFA213914CD004583CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7DCF9213914CD004583CB /* Credit.app */,
+				BEE7DD0D213914CE004583CB /* CreditTests.xctest */,
+				BEE7DD18213914CE004583CB /* CreditUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEE7DCFB213914CD004583CB /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				BE8078A7213953BF008AE246 /* Mitr */,
+				BEE7DCFC213914CD004583CB /* AppDelegate.swift */,
+				449D253C213D3D9C00948792 /* CollectionViewCell.swift */,
+				BEE7DCFE213914CD004583CB /* ViewController.swift */,
+				BEE7DD00213914CD004583CB /* Main.storyboard */,
+				449D2536213D1B9E00948792 /* AddCardViewController.swift */,
+				BE86372A213AA80C0054A0C8 /* RegisterViewController.swift */,
+				449D2532213D003900948792 /* OTPViewController.swift */,
+				BEE7DD03213914CE004583CB /* Assets.xcassets */,
+				BEE7DD05213914CE004583CB /* LaunchScreen.storyboard */,
+				BEE7DD08213914CE004583CB /* Info.plist */,
+			);
+			path = Credit;
+			sourceTree = "<group>";
+		};
+		BEE7DD10213914CE004583CB /* CreditTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7DD11213914CE004583CB /* CreditTests.swift */,
+				BEE7DD13213914CE004583CB /* Info.plist */,
+			);
+			path = CreditTests;
+			sourceTree = "<group>";
+		};
+		BEE7DD1B213914CE004583CB /* CreditUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7DD1C213914CE004583CB /* CreditUITests.swift */,
+				BEE7DD1E213914CE004583CB /* Info.plist */,
+			);
+			path = CreditUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEE7DCF8213914CC004583CB /* Credit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE7DD21213914CE004583CB /* Build configuration list for PBXNativeTarget "Credit" */;
+			buildPhases = (
+				BEE7DCF5213914CC004583CB /* Sources */,
+				BEE7DCF6213914CC004583CB /* Frameworks */,
+				BEE7DCF7213914CC004583CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Credit;
+			productName = Credit;
+			productReference = BEE7DCF9213914CD004583CB /* Credit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEE7DD0C213914CE004583CB /* CreditTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE7DD24213914CE004583CB /* Build configuration list for PBXNativeTarget "CreditTests" */;
+			buildPhases = (
+				BEE7DD09213914CE004583CB /* Sources */,
+				BEE7DD0A213914CE004583CB /* Frameworks */,
+				BEE7DD0B213914CE004583CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE7DD0F213914CE004583CB /* PBXTargetDependency */,
+			);
+			name = CreditTests;
+			productName = CreditTests;
+			productReference = BEE7DD0D213914CE004583CB /* CreditTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEE7DD17213914CE004583CB /* CreditUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE7DD27213914CE004583CB /* Build configuration list for PBXNativeTarget "CreditUITests" */;
+			buildPhases = (
+				BEE7DD14213914CE004583CB /* Sources */,
+				BEE7DD15213914CE004583CB /* Frameworks */,
+				BEE7DD16213914CE004583CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE7DD1A213914CE004583CB /* PBXTargetDependency */,
+			);
+			name = CreditUITests;
+			productName = CreditUITests;
+			productReference = BEE7DD18213914CE004583CB /* CreditUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEE7DCF1213914CC004583CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = iCard.space;
+				TargetAttributes = {
+					BEE7DCF8213914CC004583CB = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					BEE7DD0C213914CE004583CB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BEE7DCF8213914CC004583CB;
+					};
+					BEE7DD17213914CE004583CB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BEE7DCF8213914CC004583CB;
+					};
+				};
+			};
+			buildConfigurationList = BEE7DCF4213914CC004583CB /* Build configuration list for PBXProject "Credit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEE7DCF0213914CC004583CB;
+			productRefGroup = BEE7DCFA213914CD004583CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEE7DCF8213914CC004583CB /* Credit */,
+				BEE7DD0C213914CE004583CB /* CreditTests */,
+				BEE7DD17213914CE004583CB /* CreditUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEE7DCF7213914CC004583CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8078B2213953BF008AE246 /* OFL.txt in Resources */,
+				BEE7DD07213914CE004583CB /* LaunchScreen.storyboard in Resources */,
+				BEE7DD04213914CE004583CB /* Assets.xcassets in Resources */,
+				BE8078B4213953BF008AE246 /* Mitr-SemiBold.ttf in Resources */,
+				BE8078B3213953BF008AE246 /* Mitr-Light.ttf in Resources */,
+				BEE7DD02213914CD004583CB /* Main.storyboard in Resources */,
+				BE8078AF213953BF008AE246 /* Mitr-Regular.ttf in Resources */,
+				BE8078B0213953BF008AE246 /* Mitr-Bold.ttf in Resources */,
+				BE8078B5213953BF008AE246 /* Mitr-ExtraLight.ttf in Resources */,
+				BE8078B1213953BF008AE246 /* Mitr-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE7DD0B213914CE004583CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE7DD16213914CE004583CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEE7DCF5213914CC004583CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449D2533213D003900948792 /* OTPViewController.swift in Sources */,
+				BE86372B213AA80C0054A0C8 /* RegisterViewController.swift in Sources */,
+				449D253D213D3D9C00948792 /* CollectionViewCell.swift in Sources */,
+				BEE7DCFF213914CD004583CB /* ViewController.swift in Sources */,
+				BEE7DCFD213914CD004583CB /* AppDelegate.swift in Sources */,
+				449D2537213D1B9E00948792 /* AddCardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE7DD09213914CE004583CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE7DD12213914CE004583CB /* CreditTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE7DD14213914CE004583CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE7DD1D213914CE004583CB /* CreditUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEE7DD0F213914CE004583CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE7DCF8213914CC004583CB /* Credit */;
+			targetProxy = BEE7DD0E213914CE004583CB /* PBXContainerItemProxy */;
+		};
+		BEE7DD1A213914CE004583CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE7DCF8213914CC004583CB /* Credit */;
+			targetProxy = BEE7DD19213914CE004583CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEE7DD00213914CD004583CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE7DD01213914CD004583CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEE7DD05213914CE004583CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE7DD06213914CE004583CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEE7DD1F213914CE004583CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEE7DD20213914CE004583CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEE7DD22213914CE004583CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XJQ8FC3YA;
+				INFOPLIST_FILE = Credit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = space.iCardToA.Credit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BEE7DD23213914CE004583CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XJQ8FC3YA;
+				INFOPLIST_FILE = Credit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = space.iCardToA.Credit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BEE7DD25213914CE004583CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = space.iCard.CreditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credit.app/Credit";
+			};
+			name = Debug;
+		};
+		BEE7DD26213914CE004583CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = space.iCard.CreditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credit.app/Credit";
+			};
+			name = Release;
+		};
+		BEE7DD28213914CE004583CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = space.iCard.CreditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Credit;
+			};
+			name = Debug;
+		};
+		BEE7DD29213914CE004583CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = space.iCard.CreditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Credit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEE7DCF4213914CC004583CB /* Build configuration list for PBXProject "Credit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE7DD1F213914CE004583CB /* Debug */,
+				BEE7DD20213914CE004583CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE7DD21213914CE004583CB /* Build configuration list for PBXNativeTarget "Credit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE7DD22213914CE004583CB /* Debug */,
+				BEE7DD23213914CE004583CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE7DD24213914CE004583CB /* Build configuration list for PBXNativeTarget "CreditTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE7DD25213914CE004583CB /* Debug */,
+				BEE7DD26213914CE004583CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE7DD27213914CE004583CB /* Build configuration list for PBXNativeTarget "CreditUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE7DD28213914CE004583CB /* Debug */,
+				BEE7DD29213914CE004583CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEE7DCF1213914CC004583CB /* Project object */;
+}
