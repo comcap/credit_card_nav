@@ -58,6 +58,8 @@ class OTPViewController: UIViewController {
                 tf4.becomeFirstResponder()
             case tf4:
                 tf5.becomeFirstResponder()
+            case tf5:
+                tf5.resignFirstResponder()
             default:
                 break
             }

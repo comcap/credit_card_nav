@@ -11,7 +11,11 @@ import UIKit
 class AddCardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBAction func tapToHideKeyboard(_ sender: UITapGestureRecognizer) {
+        self.searchBar.resignFirstResponder()
+    }
     let card = ["KTB","SCT","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK"]
     let cardImages: [UIImage] = [
         UIImage(named: "creditCard")!,
@@ -30,11 +34,17 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.layer.masksToBounds = false
+        searchBar.layer.shadowRadius = 0.8
+        searchBar.layer.shadowOffset = CGSize(width: 0, height: 3)
+        searchBar.layer.shadowOpacity = 0.75
+        searchBar.layer.shadowColor = UIColor.black.cgColor
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         
         let itemSize = UIScreen.main.bounds.width/2 - 3;
-        let itemHeight = itemSize*80/100
+        let itemHeight = itemSize*75/100
         
         let layout = UICollectionViewFlowLayout();
         layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
@@ -46,6 +56,7 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         collectionView.collectionViewLayout = layout
         
         setCustomBackImage()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -64,6 +75,7 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         return cell
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -72,6 +84,8 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+
     
     func setCustomBackImage(){
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
