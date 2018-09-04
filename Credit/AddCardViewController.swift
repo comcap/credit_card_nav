@@ -16,8 +16,33 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBAction func tapToHideKeyboard(_ sender: UITapGestureRecognizer) {
         self.searchBar.resignFirstResponder()
     }
-    let card = ["KTB","SCT","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK"]
+    
+    
+    
+//    let card = ["KTB","SCT","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK"]
+    var tableArray = [String] ()
+    
     let cardImages: [UIImage] = [
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
+        UIImage(named: "creditCard")!,
         UIImage(named: "creditCard")!,
         UIImage(named: "creditCard")!,
         UIImage(named: "creditCard")!,
@@ -31,7 +56,8 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         UIImage(named: "creditCard")!,
         ]
     
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.layer.masksToBounds = false
@@ -40,8 +66,11 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         searchBar.layer.shadowOpacity = 0.75
         searchBar.layer.shadowColor = UIColor.black.cgColor
         
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        
+        
+        
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
         
         let itemSize = UIScreen.main.bounds.width/2 - 3;
         let itemHeight = itemSize*75/100
@@ -54,26 +83,53 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         layout.minimumInteritemSpacing = 3
         
         collectionView.collectionViewLayout = layout
-        
         setCustomBackImage()
+        fethData()
         
         // Do any additional setup after loading the view.
     }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func fethData() {
+        let url = URL(string: "https://www.baskettoy.net/getData")
         
-        return card.count
+        let session = URLSession.shared
+        session.dataTask(with: url!) { (data, response, error) in
+            guard error == nil else {
+                print("returned error")
+                return
+            }
+            
+            if error != nil{
+
+            }else {
+                print("returned error")
+            }
+            
+            guard let content = data else {
+                
+                print("No data")
+                return
+            }
+            
+            guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
+                print("Not containing JSON")
+                return
+            }
+            
+            if let array = json["data"] as? [String] {
+                self.tableArray = array
+            }
+            
+            print(self.tableArray)
+            
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+            
+        }.resume()
+    
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
-        
-        
-        cell.cardLabel.text = card[indexPath.item]
-        cell.cardImageView.image = cardImages[indexPath.item]
-        return cell
-    }
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -100,4 +156,22 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     */
 
+}
+
+extension AddCardViewController {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return self.tableArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
+        
+        
+        cell.cardLabel.text = self.tableArray[indexPath.item]
+        cell.cardImageView.image = cardImages[indexPath.item]
+        
+        return cell
+    }
 }

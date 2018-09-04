@@ -637,7 +637,7 @@
                     <navigationItem key="navigationItem" title="เพิ่มบัตรของฉัน" id="avH-7G-e7R">
                         <barButtonItem key="rightBarButtonItem" title="Skip" id="nju-z0-4yN">
                             <connections>
-                                <segue destination="lhN-9e-iYR" kind="show" id="BDF-Rh-494"/>
+                                <segue destination="lhN-9e-iYR" kind="show" id="PGG-In-5Sf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -24812,7 +24812,7 @@ GgsAFhoTABYaFgAWGigAFhorABYaMAAAAAAAAAQBAAAAAAAAAFYAAAAAAAAAAAAAAAAAFhoyA
         </image>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CEi-3A-dBZ"/>
+        <segue reference="PGG-In-5Sf"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
