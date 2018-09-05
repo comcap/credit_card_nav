@@ -229,6 +229,7 @@
                                 <connections>
                                     <action selector="copy:" destination="BGz-W3-Wz3" eventType="editingDidEnd" id="5hO-hi-3zW"/>
                                     <action selector="username:" destination="EU2-bK-6Lt" eventType="editingDidEnd" id="tes-fx-37M"/>
+                                    <outlet property="delegate" destination="AW5-CA-wiX" id="rHG-f6-42i"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="กรอกรหัสผ่าน" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hux-pB-NlY" customClass="TextField" customModule="Credit" customModuleProvider="target">
@@ -247,6 +248,7 @@
                                 <connections>
                                     <action selector="copy:" destination="BGz-W3-Wz3" eventType="editingDidEnd" id="DWP-CY-xV6"/>
                                     <action selector="username:" destination="EU2-bK-6Lt" eventType="editingDidEnd" id="5Dw-ma-usl"/>
+                                    <outlet property="delegate" destination="AW5-CA-wiX" id="KTO-hw-1VU"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="กรอกเบอร์ติดต่อ" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sy0-29-5Jh" customClass="TextField" customModule="Credit" customModuleProvider="target">
@@ -265,6 +267,7 @@
                                 <connections>
                                     <action selector="copy:" destination="BGz-W3-Wz3" eventType="editingDidEnd" id="mHZ-Y3-h1S"/>
                                     <action selector="username:" destination="EU2-bK-6Lt" eventType="editingDidEnd" id="9Ev-bu-rgi"/>
+                                    <outlet property="delegate" destination="AW5-CA-wiX" id="iez-Mk-UuN"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="กรอกรหัสผ่านอีกครั้ง" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bg4-OR-Shh" customClass="TextField" customModule="Credit" customModuleProvider="target">
@@ -283,6 +286,7 @@
                                 <connections>
                                     <action selector="copy:" destination="BGz-W3-Wz3" eventType="editingDidEnd" id="DHi-sC-iVj"/>
                                     <action selector="username:" destination="EU2-bK-6Lt" eventType="editingDidEnd" id="g1A-a1-ffS"/>
+                                    <outlet property="delegate" destination="AW5-CA-wiX" id="4Jp-Z4-HhK"/>
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="HZP-rI-rlq">
@@ -351,7 +355,7 @@
                         <outlet property="confirmPassword" destination="bg4-OR-Shh" id="C9a-2O-c1c"/>
                         <outlet property="password" destination="Hux-pB-NlY" id="Idy-EE-bAL"/>
                         <outlet property="phone" destination="sy0-29-5Jh" id="yEF-TZ-Te8"/>
-                        <outlet property="username" destination="sgM-mS-eeD" id="O2l-6A-ihi"/>
+                        <outlet property="usename" destination="sgM-mS-eeD" id="4fa-rU-Pa2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGz-W3-Wz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
