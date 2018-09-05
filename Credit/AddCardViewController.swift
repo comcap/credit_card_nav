@@ -13,12 +13,6 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    @IBAction func tapToHideKeyboard(_ sender: UITapGestureRecognizer) {
-        self.searchBar.resignFirstResponder()
-    }
-    
-    
-    
 //    let card = ["KTB","SCT","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK","KBANK"]
     var tableArray = [String] ()
     
@@ -66,11 +60,9 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         searchBar.layer.shadowOpacity = 0.75
         searchBar.layer.shadowColor = UIColor.black.cgColor
         
-        
-        
-        
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
+        
         
         let itemSize = UIScreen.main.bounds.width/2 - 3;
         let itemHeight = itemSize*75/100
@@ -86,8 +78,13 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         setCustomBackImage()
         fethData()
         
+        self.hideKeyboardWhenTappedAround()
+
+
         // Do any additional setup after loading the view.
     }
+
+    
     func fethData() {
         let url = URL(string: "https://www.baskettoy.net/getData")
         
@@ -136,11 +133,6 @@ class AddCardViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
 
     
     func setCustomBackImage(){
@@ -174,4 +166,7 @@ extension AddCardViewController {
         
         return cell
     }
+    
 }
+
+
