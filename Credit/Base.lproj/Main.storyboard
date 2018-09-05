@@ -41,7 +41,7 @@
                                         <fragment content="เข้าสู่ระบบ">
                                             <attributes>
                                                 <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="20" name="Mitr-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -101,7 +101,7 @@
                                         <fragment content="เข้าสู่ระบบด้วย LINE">
                                             <attributes>
                                                 <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="20" name="Mitr-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
