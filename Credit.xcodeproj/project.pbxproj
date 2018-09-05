@@ -25,6 +25,7 @@
 		BEBE1394213F8D9E004A35C6 /* NotificationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE138D213F8D9D004A35C6 /* NotificationCollectionViewCell.swift */; };
 		BEBE1395213F8D9E004A35C6 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE138E213F8D9D004A35C6 /* MyAccountViewController.swift */; };
 		BEBE1396213F8D9E004A35C6 /* TabBarHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE138F213F8D9D004A35C6 /* TabBarHomeController.swift */; };
+		BEBE1398213FC68D004A35C6 /* ExchangeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE1397213FC68D004A35C6 /* ExchangeCollectionViewCell.swift */; };
 		BEE7DCFD213914CD004583CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7DCFC213914CD004583CB /* AppDelegate.swift */; };
 		BEE7DCFF213914CD004583CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7DCFE213914CD004583CB /* ViewController.swift */; };
 		BEE7DD02213914CD004583CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE7DD00213914CD004583CB /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		BEBE138D213F8D9D004A35C6 /* NotificationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCollectionViewCell.swift; sourceTree = "<group>"; };
 		BEBE138E213F8D9D004A35C6 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		BEBE138F213F8D9D004A35C6 /* TabBarHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarHomeController.swift; sourceTree = "<group>"; };
+		BEBE1397213FC68D004A35C6 /* ExchangeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BEE7DCF9213914CD004583CB /* Credit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Credit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE7DCFC213914CD004583CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEE7DCFE213914CD004583CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BE8078A7213953BF008AE246 /* Mitr */,
+				BEE7DD00213914CD004583CB /* Main.storyboard */,
 				BEE7DCFC213914CD004583CB /* AppDelegate.swift */,
 				449D253C213D3D9C00948792 /* CollectionViewCell.swift */,
 				BEE7DCFE213914CD004583CB /* ViewController.swift */,
@@ -155,13 +158,13 @@
 				BE86372A213AA80C0054A0C8 /* RegisterViewController.swift */,
 				449D2532213D003900948792 /* OTPViewController.swift */,
 				BEBE138C213F8D9D004A35C6 /* ExchangeViewController.swift */,
-				BEBE1389213F8D9C004A35C6 /* HomeCollectionViewCell.swift */,
+				BEBE1397213FC68D004A35C6 /* ExchangeCollectionViewCell.swift */,
 				BEBE138A213F8D9D004A35C6 /* HomePrivilegeViewController.swift */,
+				BEBE1389213F8D9C004A35C6 /* HomeCollectionViewCell.swift */,
 				BEBE138E213F8D9D004A35C6 /* MyAccountViewController.swift */,
 				BEBE138D213F8D9D004A35C6 /* NotificationCollectionViewCell.swift */,
 				BEBE138B213F8D9D004A35C6 /* NotificationViewController.swift */,
 				BEBE138F213F8D9D004A35C6 /* TabBarHomeController.swift */,
-				BEE7DD00213914CD004583CB /* Main.storyboard */,
 				BEE7DD03213914CE004583CB /* Assets.xcassets */,
 				BEE7DD05213914CE004583CB /* LaunchScreen.storyboard */,
 				BEE7DD08213914CE004583CB /* Info.plist */,
@@ -342,6 +345,7 @@
 				BEBE1392213F8D9D004A35C6 /* NotificationViewController.swift in Sources */,
 				BEE7DCFF213914CD004583CB /* ViewController.swift in Sources */,
 				BEE7DCFD213914CD004583CB /* AppDelegate.swift in Sources */,
+				BEBE1398213FC68D004A35C6 /* ExchangeCollectionViewCell.swift in Sources */,
 				449D2537213D1B9E00948792 /* AddCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
