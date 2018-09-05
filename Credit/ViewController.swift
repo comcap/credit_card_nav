@@ -14,6 +14,12 @@ class ViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var pass: UITextField!
     @IBOutlet weak var register: UIButton!
     @IBOutlet weak var forgot: UIButton!
+
+    @IBAction func loginButton(_ sender: Any) {
+        print(telephone.text!)
+        print(pass.text!)
+        
+    }
     
     let underline : [NSAttributedStringKey: Any] = [
         NSAttributedStringKey.foregroundColor : UIColor.black,
