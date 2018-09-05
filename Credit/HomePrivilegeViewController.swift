@@ -44,13 +44,11 @@ class HomePrivilegeViewController: UIViewController, UICollectionViewDelegate, U
         layout.minimumInteritemSpacing = 3
         
 //        collectviewHome.layer.masksToBounds = false
-        
+//        self.hideKeyboardWhenTappedAround()
         
         collectviewHome.collectionViewLayout = layout
-        
-        
-        setCustomBackImage()
 
+        
         // Do any additional setup after loading the view.
     }
     
@@ -83,6 +81,10 @@ class HomePrivilegeViewController: UIViewController, UICollectionViewDelegate, U
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
     }
     
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//    }
+    
 
     /*
     // MARK: - Navigation
@@ -95,7 +97,6 @@ class HomePrivilegeViewController: UIViewController, UICollectionViewDelegate, U
     */
 
 }
-
 
 
 

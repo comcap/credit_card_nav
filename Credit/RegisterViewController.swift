@@ -8,23 +8,22 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var usename: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     @IBOutlet weak var phone: UITextField!
     @IBOutlet weak var navigationBar: UINavigationBar!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        username.layer.masksToBounds = false
-        username.layer.shadowRadius = 0.7
-        username.layer.shadowOffset = CGSize(width: 0, height: 1)
-        username.layer.shadowOpacity = 0.8
-        username.layer.shadowColor = UIColor.black.cgColor
+        usename.layer.masksToBounds = false
+        usename.layer.shadowRadius = 0.7
+        usename.layer.shadowOffset = CGSize(width: 0, height: 1)
+        usename.layer.shadowOpacity = 0.8
+        usename.layer.shadowColor = UIColor.black.cgColor
         
         password.layer.masksToBounds = false
         password.layer.shadowRadius = 0.7
@@ -45,13 +44,49 @@ class RegisterViewController: UIViewController {
         phone.layer.shadowColor = UIColor.black.cgColor
 
         setCustomBackImage()
+        self.hideKeyboardWhenTappedAround()
+        
         // Do any additional setup after loading the view.
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -140, up: true)
     }
 
+    // Finish Editing The Text Field
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -140, up: false)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usename {
+            textField.resignFirstResponder()
+            password.becomeFirstResponder()
+        } else if textField == password {
+            textField.resignFirstResponder()
+            confirmPassword.becomeFirstResponder()
+        } else if textField == confirmPassword {
+            textField.resignFirstResponder()
+            phone.becomeFirstResponder()
+        } else if textField == phone {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    
+    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
+        let moveDuration = 0.3
+        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
+
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(moveDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
