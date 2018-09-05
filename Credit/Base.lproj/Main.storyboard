@@ -513,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7S-R5-xYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5148" y="22.167487684729064"/>
+            <point key="canvasLocation" x="5009" y="23"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3qL-BZ-MsN">
@@ -813,22 +813,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-Nm-tff">
-                                <rect key="frame" x="135" y="274" width="54" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 4 Na Ja" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-Nm-tff">
+                                <rect key="frame" x="16" y="316" width="343" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dhC-Nm-tff" firstAttribute="centerY" secondItem="DYR-7f-YAE" secondAttribute="centerY" id="0O1-cP-EDn"/>
+                            <constraint firstItem="dhC-Nm-tff" firstAttribute="centerX" secondItem="DYR-7f-YAE" secondAttribute="centerX" id="5W9-Zw-2JM"/>
+                            <constraint firstItem="g1h-Zd-gjY" firstAttribute="trailing" secondItem="dhC-Nm-tff" secondAttribute="trailing" constant="16" id="Heq-lM-XRd"/>
+                            <constraint firstItem="dhC-Nm-tff" firstAttribute="leading" secondItem="g1h-Zd-gjY" secondAttribute="leading" constant="16" id="a3a-MO-Ljm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="g1h-Zd-gjY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="บัญชีของฉัน" image="account-icon" id="89O-iF-7Sg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGf-WC-08c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="1838"/>
+            <point key="canvasLocation" x="1980" y="1837.3313343328336"/>
         </scene>
         <!--Home Privilege View Controller-->
         <scene sceneID="4J9-NF-5CL">
