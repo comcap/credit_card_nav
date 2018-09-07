@@ -485,6 +485,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Mitr-Regular" family="Mitr" pointSize="20"/>
                                 <state key="normal" title="สมัครสมาชิก"/>
+                                <connections>
+                                    <segue destination="vJT-6U-pNN" kind="showDetail" id="qVM-rc-AzI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -517,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7S-R5-xYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5009" y="23"/>
+            <point key="canvasLocation" x="4983" y="19"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3qL-BZ-MsN">
@@ -704,7 +707,7 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healt-icon" translatesAutoresizingMaskIntoConstraints="NO" id="jty-22-b2w">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hearth-red" translatesAutoresizingMaskIntoConstraints="NO" id="jty-22-b2w">
                                                     <rect key="frame" x="249" y="150" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="0e1-9j-gE8"/>
@@ -809,7 +812,7 @@
             </objects>
             <point key="canvasLocation" x="1047" y="2634"/>
         </scene>
-        <!--บัญชีของฉัน-->
+        <!--My Account View Controller-->
         <scene sceneID="VJF-uY-7PL">
             <objects>
                 <viewController id="Qbq-h6-LIw" customClass="MyAccountViewController" customModule="Credit" customModuleProvider="target" sceneMemberID="viewController">
@@ -817,27 +820,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 4 test2 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-Nm-tff">
-                                <rect key="frame" x="16" y="316" width="343" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jt-ri-79y">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Me9-XG-t9T">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="f7P-az-0lS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Me9-XG-t9T" firstAttribute="leading" secondItem="6jt-ri-79y" secondAttribute="leading" id="1e9-EL-tty"/>
+                                    <constraint firstAttribute="bottom" secondItem="Me9-XG-t9T" secondAttribute="bottom" id="POr-Un-T77"/>
+                                    <constraint firstItem="Me9-XG-t9T" firstAttribute="top" secondItem="6jt-ri-79y" secondAttribute="top" id="d7q-G7-qKN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Me9-XG-t9T" secondAttribute="trailing" id="dqj-Tq-hfp"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dhC-Nm-tff" firstAttribute="centerY" secondItem="DYR-7f-YAE" secondAttribute="centerY" id="0O1-cP-EDn"/>
-                            <constraint firstItem="dhC-Nm-tff" firstAttribute="centerX" secondItem="DYR-7f-YAE" secondAttribute="centerX" id="5W9-Zw-2JM"/>
-                            <constraint firstItem="g1h-Zd-gjY" firstAttribute="trailing" secondItem="dhC-Nm-tff" secondAttribute="trailing" constant="16" id="Heq-lM-XRd"/>
-                            <constraint firstItem="dhC-Nm-tff" firstAttribute="leading" secondItem="g1h-Zd-gjY" secondAttribute="leading" constant="16" id="a3a-MO-Ljm"/>
+                            <constraint firstItem="6jt-ri-79y" firstAttribute="bottom" secondItem="g1h-Zd-gjY" secondAttribute="bottom" id="3ss-pm-jBS"/>
+                            <constraint firstItem="6jt-ri-79y" firstAttribute="trailing" secondItem="g1h-Zd-gjY" secondAttribute="trailing" id="9Aj-RK-Kkx"/>
+                            <constraint firstItem="6jt-ri-79y" firstAttribute="top" secondItem="g1h-Zd-gjY" secondAttribute="top" id="BKp-3g-OPT"/>
+                            <constraint firstItem="Me9-XG-t9T" firstAttribute="width" secondItem="DYR-7f-YAE" secondAttribute="width" id="VQQ-2o-LIr"/>
+                            <constraint firstItem="6jt-ri-79y" firstAttribute="leading" secondItem="g1h-Zd-gjY" secondAttribute="leading" id="sI5-lb-aSQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g1h-Zd-gjY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="บัญชีของฉัน" image="account-icon" id="89O-iF-7Sg"/>
+                    <navigationItem key="navigationItem" id="jpm-Bo-sma">
+                        <barButtonItem key="leftBarButtonItem" title="Logo" id="AoE-Yy-7BO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hearth-white" id="xKo-bs-Pa3"/>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGf-WC-08c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="1837.3313343328336"/>
+            <point key="canvasLocation" x="1980" y="2633"/>
         </scene>
         <!--Home Privilege View Controller-->
         <scene sceneID="4J9-NF-5CL">
@@ -1033,7 +1053,7 @@
                                                         <constraint firstAttribute="width" secondItem="UjC-NT-z9U" secondAttribute="height" multiplier="31:20" id="z0v-64-bbO"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healt-icon" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-lC-fr0">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hearth-red" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-lC-fr0">
                                                     <rect key="frame" x="249" y="150" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="XPm-IA-OMD"/>
@@ -1131,7 +1151,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="c3b-4V-8b6">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vJT-6U-pNN" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="vJT-6U-pNN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KFO-BO-egf">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -1145,7 +1165,7 @@
                         <segue destination="XME-ht-yYm" kind="relationship" relationship="viewControllers" id="9dP-iN-Zsv"/>
                         <segue destination="wco-ol-tWA" kind="relationship" relationship="viewControllers" id="YGQ-Et-Hq0"/>
                         <segue destination="bFh-sI-dxF" kind="relationship" relationship="viewControllers" id="h46-Lj-6NL"/>
-                        <segue destination="Qbq-h6-LIw" kind="relationship" relationship="viewControllers" id="8YN-lB-EH1"/>
+                        <segue destination="XTw-xs-doR" kind="relationship" relationship="viewControllers" id="8YN-lB-EH1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vi7-5q-mqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1215,6 +1235,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apm-Lb-fRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048" y="1838"/>
+        </scene>
+        <!--บัญชีของฉัน-->
+        <scene sceneID="MDW-7E-pwE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XTw-xs-doR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="บัญชีของฉัน" image="account-icon" id="89O-iF-7Sg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="4DD-pR-b5Y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qbq-h6-LIw" kind="relationship" relationship="rootViewController" id="XaV-8c-8gt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgL-fa-Qe7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="1837.3313343328336"/>
         </scene>
     </scenes>
     <resources>
@@ -25373,7 +25413,8 @@ GgsAFhoTABYaFgAWGigAFhorABYaMAAAAAAAAAQBAAAAAAAAAFYAAAAAAAAAAAAAAAAAFhoyA
 </mutableData>
         </image>
         <image name="creditCard" width="640" height="405"/>
-        <image name="healt-icon" width="64" height="64"/>
+        <image name="hearth-red" width="29" height="29"/>
+        <image name="hearth-white" width="29" height="29"/>
         <image name="imageLabelBlack" width="2092" height="422"/>
         <image name="noti-icon" width="29" height="29"/>
         <image name="pin-icon" width="29" height="29"/>
@@ -25382,6 +25423,7 @@ GgsAFhoTABYaFgAWGigAFhorABYaMAAAAAAAAAQBAAAAAAAAAFYAAAAAAAAAAAAAAAAAFhoyA
         <image name="wxchange-icon" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="qVM-rc-AzI"/>
         <segue reference="PGG-In-5Sf"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
