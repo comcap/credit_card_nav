@@ -30,6 +30,8 @@ class ViewController: UIViewController , UITextFieldDelegate {
         super.viewDidLoad()
         
         
+        
+        
         telephone.layer.masksToBounds = false
         telephone.layer.shadowRadius = 0.7
         telephone.layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -99,5 +101,15 @@ class TextField: UITextField {
     
 }
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer =     UITapGestureRecognizer(target: self, action:    #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
 
 
