@@ -10,6 +10,7 @@
 		449D2533213D003900948792 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D2532213D003900948792 /* OTPViewController.swift */; };
 		449D2537213D1B9E00948792 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D2536213D1B9E00948792 /* AddCardViewController.swift */; };
 		449D253D213D3D9C00948792 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D253C213D3D9C00948792 /* CollectionViewCell.swift */; };
+		BE0BEC3D2140E8F700E5762F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BEC3C2140E8F700E5762F /* ForgotPasswordViewController.swift */; };
 		BE8078AF213953BF008AE246 /* Mitr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078A8213953BF008AE246 /* Mitr-Regular.ttf */; };
 		BE8078B0213953BF008AE246 /* Mitr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078A9213953BF008AE246 /* Mitr-Bold.ttf */; };
 		BE8078B1213953BF008AE246 /* Mitr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE8078AA213953BF008AE246 /* Mitr-Medium.ttf */; };
@@ -56,6 +57,7 @@
 		449D2532213D003900948792 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		449D2536213D1B9E00948792 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		449D253C213D3D9C00948792 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BE0BEC3C2140E8F700E5762F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		BE8078A8213953BF008AE246 /* Mitr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Regular.ttf"; sourceTree = "<group>"; };
 		BE8078A9213953BF008AE246 /* Mitr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Bold.ttf"; sourceTree = "<group>"; };
 		BE8078AA213953BF008AE246 /* Mitr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Medium.ttf"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				BE8078A7213953BF008AE246 /* Mitr */,
 				BEE7DD00213914CD004583CB /* Main.storyboard */,
 				BEE7DCFC213914CD004583CB /* AppDelegate.swift */,
+				BE0BEC3C2140E8F700E5762F /* ForgotPasswordViewController.swift */,
 				449D253C213D3D9C00948792 /* CollectionViewCell.swift */,
 				BEE7DCFE213914CD004583CB /* ViewController.swift */,
 				449D2536213D1B9E00948792 /* AddCardViewController.swift */,
@@ -344,6 +347,7 @@
 				449D253D213D3D9C00948792 /* CollectionViewCell.swift in Sources */,
 				BEBE1392213F8D9D004A35C6 /* NotificationViewController.swift in Sources */,
 				BEE7DCFF213914CD004583CB /* ViewController.swift in Sources */,
+				BE0BEC3D2140E8F700E5762F /* ForgotPasswordViewController.swift in Sources */,
 				BEE7DCFD213914CD004583CB /* AppDelegate.swift in Sources */,
 				BEBE1398213FC68D004A35C6 /* ExchangeCollectionViewCell.swift in Sources */,
 				449D2537213D1B9E00948792 /* AddCardViewController.swift in Sources */,
