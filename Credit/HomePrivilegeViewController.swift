@@ -28,6 +28,7 @@ class HomePrivilegeViewController: UIViewController, UICollectionViewDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         collectviewHome.dataSource = self
         collectviewHome.delegate = self
         
@@ -51,6 +52,8 @@ class HomePrivilegeViewController: UIViewController, UICollectionViewDelegate, U
         
         // Do any additional setup after loading the view.
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -97,6 +100,17 @@ class HomePrivilegeViewController: UIViewController, UICollectionViewDelegate, U
     */
 
 }
+
+extension UITabBar {
+    
+    override open func sizeThatFits(_ size: CGSize) -> CGSize {
+        var sizeThatFits = super.sizeThatFits(size)
+        sizeThatFits.height = 70 // adjust your size here
+        return sizeThatFits
+    }
+}
+
+
 
 
 

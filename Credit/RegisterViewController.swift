@@ -14,11 +14,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     @IBOutlet weak var phone: UITextField!
-    @IBOutlet weak var navigationBar: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        let customNavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 200))
+        self.view.addSubview(customNavigationBar)
+
         usename.layer.masksToBounds = false
         usename.layer.shadowRadius = 0.7
         usename.layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -45,9 +48,10 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 
         setCustomBackImage()
         self.hideKeyboardWhenTappedAround()
-        
+        print("1")
         // Do any additional setup after loading the view.
     }
+
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         moveTextField(textField, moveDistance: -140, up: true)
